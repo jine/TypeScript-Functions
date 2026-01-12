@@ -1,7 +1,7 @@
 # Workshop: Funktioner, Logik & Referense
 
 ## Steg 1: Syntax-omvandlingen (Gammalt till Nytt)
-Vi börjar med att värma upp muskelminnet för den syntax som används i React.
+Vi börjar med att öva på den moderna syntaxen som är standard idag.
 
 - [ ] Skriv en **gammaldags** namngiven funktion (med nyckelordet `function`) som heter `calculateArea`. Den ska ta `width` och `height` (numbers) och returnera arean.
 - [ ] Skriv sedan **om** exakt samma funktion till en modern **Arrow Function** (`const calculateArea = ...`) under den gamla.
@@ -61,18 +61,17 @@ Här ska vi bevisa skillnaden på *Pass-by-Value* och *Pass-by-Reference*. Detta
 
 ---
 
-## Steg 5: Slutuppgift – "Varukorgen"
+## Steg 5: Slutuppgift – "Varukorgen" 
 Nu knyter vi ihop objekt, arrayer och funktioner.
 
-- [ ] Skapa en lista (Array) med objekt som simulerar en varukorg. Varje objekt ska ha:
+- [ ] Skapa en lista (Array) med objekt som simulerar en varukorg. Varje objekt i listan ska ha:
     * `name` (string)
     * `price` (number)
-    * *(Tips: Använd gärna ett interface `Product` om du vill!)*
 - [ ] Skapa en funktion `calculateTotal`.
     * Den ska ta emot varukorgen som parameter.
     * Den ska loopa igenom listan och returnera totalsumman.
 - [ ] Skapa en funktion `addProduct`.
-    * Den ska ta emot varukorgen och en **ny** produkt.
+    * Den ska ta emot varukorgen och en **ny** produkt (ett objekt med namn och pris).
     * Den ska lägga till (`push`) den nya produkten i listan.
 - [ ] **Simulera ett köp:**
     1.  Logga totalen (bör vara t.ex. 0 eller vad du startade med).
