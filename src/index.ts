@@ -88,6 +88,7 @@ const shoppingCart: { item: string; quantity: number; pricePerUnit: number }[] =
     { item: "Laddare", quantity: 2, pricePerUnit: 199 },
     { item: "Powerbank", quantity: 1, pricePerUnit: 299 }
 ];
+
  // Som objekt, ospecifierat, går att skicka in vilket objekt som helst då
 // function calculateTotal(cart: object[]): number {
 
