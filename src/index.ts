@@ -67,9 +67,9 @@ console.log("Count string array: " + countStrings(["Hello", "World", "TypeScript
 
 // Pass by value vs pass by reference
 const price: number = 100;
-const product: object = { name: "Produkten", price: 100 };
+const product: { name: string; price: number } = { name: "Produkten", price: 100 };
 
-function applyDiscount(p: number, prod: object): void {
+function applyDiscount(p: number, prod: { name: string; price: number }): void {
     p = 50; // p är en pass by value
     prod.price = 50; // prod skickas som referens
 }
