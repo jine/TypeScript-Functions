@@ -33,7 +33,7 @@ console.log("calculateAreaTiny = " + calculateAreaTiny(5, 10));
 // Steg 2
 
 // Funktion med standardvärde och valfri parameter
-function greet(name: string, greeting: string = "Hej", isShouting?: boolean): string {
+const greet = (name: string, greeting: string = "Hej", isShouting?: boolean): string => {
     let finalGreeting = `${greeting}, ${name}`;
     if (isShouting) {
         finalGreeting = finalGreeting.toUpperCase();
@@ -50,7 +50,7 @@ console.log("Charlie: " + greet("Charlie", "Hallå", true));
 // Steg 3
 
 // Funktion med union type, som kan ta antingen en sträng eller en array av strängar
-function countStrings(input: string | string[]): number {
+const countStrings = (input: string | string[]): number =>  {
     if(Array.isArray(input)) {
         return input.length;
     } else {
@@ -69,7 +69,7 @@ console.log("Count string array: " + countStrings(["Hello", "World", "TypeScript
 const price: number = 100;
 const product: { name: string; price: number } = { name: "Produkten", price: 100 };
 
-function applyDiscount(p: number, prod: { name: string; price: number }): void {
+const applyDiscount = (p: number, prod: { name: string; price: number }): void => {
     p = 50; // p är en pass by value
     prod.price = 50; // prod skickas som referens
 }
@@ -93,7 +93,7 @@ const shoppingCart: { item: string; quantity: number; pricePerUnit: number }[] =
 // function calculateTotal(cart: object[]): number {
 
 // Specifierat objekt går bara att skicka in rätt objekt
-function calculateTotal(cart: { item: string; quantity: number; pricePerUnit: number }[]): number { 
+const calculateTotal = (cart: { item: string; quantity: number; pricePerUnit: number }[]): number => {
 
     let total = 0;
 
